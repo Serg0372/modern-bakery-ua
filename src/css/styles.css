@@ -1,18 +1,25 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+/* base styles */
+@import url('./base/reset.css');
+@import url('./base/variables.css');
+@import url('./base/fonts.css');
+@import url('./base/base.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+/* Components styles */
+@import url('./components/buttons.css');
+@import url('./components/icons.css');
+@import url('./components/mobile-menu.css');
+@import url('./components/modal.css');
+/* @import url('./components/animations.css'); */
+/* @import url('./components/cards.css'); */
+
+/*Layout styles */
+@import url('./layout/header.css');
+@import url('./layout/footer.css');
+
+/*Sections styles */
+@import url('./sections/hero-section.css');
+@import url('./sections/advantages-section.css');
+@import url('./sections/traditions-section.css');
+@import url('./sections/chefs-section.css');
+@import url('./sections/formats-section.css');
+@import url('./sections/contacts-section.css');
