@@ -1,0 +1,49 @@
+<div class="backdrop is-hidden">
+  <div class="modal">
+    <button class="button-close modal-close " type="button">
+      <svg class="modal-close-icon" width="32" height="32">
+        <use href="./src/img/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="section-title">Замовити дзвінок</h2>
+    <p class="modal-text">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+    <form class="modal-form contacts-form">
+      <label class="form-label visually-hidden" for="name">Ім'я</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ ]+"
+        title="Тільки літери"
+        placeholder="Ім'я"
+        required />
+
+      <label class="form-label visually-hidden" for="tel">Телефон</label>
+      <input
+        type="tel"
+        name="phone"
+        id="tel"
+        pattern="\+380\d{9}"
+        title="+380XXXXXXXXX"
+        placeholder="Телефон"
+        required />
+
+      <label class="form-label visually-hidden" for="email">Електронна пошта</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        title="Введіть коректний email"
+        placeholder="Електронна пошта"
+        required />
+      <button class="button contacts-button" type="submit">Замовити дзвінок</button>
+
+      <p class="policy contacts-policy"
+        >Натискаючи на кнопку я погоджуюсь з
+        <span class="form-link contacts-link">
+          <a href="#" target="_blank">політикою конфіденційності</a>
+        </span>
+      </p>
+    </form>
+  </div>
+</div>

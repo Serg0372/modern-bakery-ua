@@ -1,0 +1,59 @@
+<section class="section contacts-section">
+  <div class="container contacts-container">
+    <div class="contacts-box">
+      <div class="contacts-form-box">
+        <h2 class="section-title">Приєднуйся до мережі пекарень </h2>
+        <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+        <form class="modal-form contacts-form">
+          <label class="form-label visually-hidden" for="name">Ім'я</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ ]+"
+            title="Тільки літери"
+            placeholder="Ім'я"
+            required />
+
+          <label class="form-label visually-hidden" for="tel">Телефон</label>
+          <input
+            type="tel"
+            name="phone"
+            id="tel"
+            pattern="\+380\d{9}"
+            title="+380XXXXXXXXX"
+            placeholder="Телефон"
+            required />
+
+          <label class="form-label visually-hidden" for="email">Електронна пошта</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            title="Введіть коректний email"
+            placeholder="Електронна пошта"
+            required />
+          <button class="button contacts-button" type="submit">Замовити дзвінок</button>
+
+          <p class="policy contacts-policy"
+            >Натискаючи на кнопку я погоджуюсь з
+            <span class="form-link contacts-link">
+              <a href="#" target="_blank">політикою конфіденційності</a>
+            </span>
+          </p>
+        </form>
+      </div>
+
+      <div class="contacts-map-box">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.163447042478!2d30.488693011697436!3d50.45668098679724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1770468454405!5m2!1suk!2sua"
+          width="360"
+          height="176"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
