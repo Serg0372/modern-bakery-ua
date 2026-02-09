@@ -1,34 +1,94 @@
-/* h1,
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
   margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  scroll-behavior: smooth;
+}
+
+ul,
+ol {
+  list-style: none;
 }
 
 p:last-child {
   margin-bottom: 0;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+a {
+  text-decoration: none;
+  color: currentColor;
+  letter-spacing: 0;
 }
 
-a {
-  color: currentColor;
+a:hover,
+a:focus-visible {
   text-decoration: none;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+textarea {
+  resize: none;
 }
 
 button {
   cursor: pointer;
+  border: none;
+  padding: 0;
+  background: none;
+  user-select: none;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-} */
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}

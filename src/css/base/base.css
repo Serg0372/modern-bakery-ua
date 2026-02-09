@@ -1,19 +1,57 @@
 /* Styles for Mobile devices */
-/* .container {
+.container {
   min-width: 320px;
-  max-width: 375px;
+  /* max-width: 375px; */
   margin: 0 auto;
-  padding: 0 16px;
-} */
-/* Styles for Tablet devices */
-/* @media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-} */
+  padding: 0 20px;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: var(--fs-s);
+  font-weight: var(--fw-light);
+  letter-spacing: var(--ls-main);
+  line-height: 1.5;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+.section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h1 {
+  font-weight: var(--fw-black);
+  font-size: var(--fs-huge);
+  line-height: 99%;
+  color: var(--color-light);
+}
+
+h2 {
+  /* font-family: var(--primary-font); */
+  font-weight: var(--fw-black);
+  font-size: var(--fs-xxl);
+  line-height: 131%;
+}
+
+h1,
+h2,
+button {
+  letter-spacing: var(--ls-tight);
+}
+
+
 /* Styles for Desktop devices */
-/* @media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .container {
-    max-width: 1200px;
+    max-width: 1240px;
+    padding: 0 100px;
   }
-} */
+
+  .section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}

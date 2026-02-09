@@ -1,14 +1,45 @@
 :root {
-    --bakery-landing-1-background: #faf4ea;
-    --bakery-landing-1-s1: #31261a;
-    --bakery-landing-1-c2: #819b57;
-    --bakery-landing-1-s3: #465929;
-    --bakery-landing-1-s4: #a18268;
-    --bakery-landing-1-c5: #cfcfbc;
+    --color-light: #faf4ea;
+    --color-dark: #31261a;
+    --color-accent-light: #819b57;
+    --color-accent-dark: #465929;
+    --color-input-text: #a18268;
 
-    --font-family: "Poppins", sans-serif;
-    --second-family: "Roboto", sans-serif;
-    --third-family: "Inter", sans-serif;
-    --font3: "Gilroy", sans-serif;
 
+    --primary-font: "Poppins", sans-serif;
+    --second-font: "Roboto", sans-serif;
+
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-black: 900;
+
+    /* Font Sizes */
+    --fs-xs: 12px;
+    --fs-s: 14px;
+    --fs-m: 16px;
+    --fs-l: 18px;
+    --fs-xl: 24px;
+    --fs-xxl: 32px;
+    --fs-h2: 48px;
+    --fs-h1: 67px;
+
+    --ls-tight: -0.04em;
+    /* Для великих заголовків */
+    --ls-main: -0.02em;
+    /* Для основного тексту (більш безпечно) */
+
+    --anim-fast: 0.3s ease-in-out;
+    --anim-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+@media only screen and (min-width: 1240px) {
+    :root {
+        --fs-h1: 126px;
+        --fs-h2: 64px;
+    }
 }
