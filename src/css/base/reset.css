@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 h1,
 h2,
@@ -27,7 +31,7 @@ dd {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  scroll-behavior: smooth;
+
 }
 
 ul,
@@ -35,8 +39,10 @@ ol {
   list-style: none;
 }
 
-p:last-child {
+p:last-child,
+li:last-child {
   margin-bottom: 0;
+
 }
 
 a {

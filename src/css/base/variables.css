@@ -4,6 +4,8 @@
     --color-accent-light: #819b57;
     --color-accent-dark: #465929;
     --color-input-text: #a18268;
+    --color-input-border: #cfcfbc;
+    ;
 
 
     --primary-font: "Poppins", sans-serif;
@@ -22,10 +24,12 @@
     --fs-s: 14px;
     --fs-m: 16px;
     --fs-l: 18px;
-    --fs-xl: 24px;
-    --fs-xxl: 32px;
-    --fs-h2: 48px;
+    --fs-xl: 20px;
+    --fs-xxl: 24px;
+    --fs-h2: 32px;
     --fs-h1: 67px;
+
+    --lh-h: 1.2;
 
     --ls-tight: -0.04em;
     /* Для великих заголовків */
@@ -37,7 +41,7 @@
 
 }
 
-@media only screen and (min-width: 1240px) {
+@media screen and (min-width: 1240px) {
     :root {
         --fs-h1: 126px;
         --fs-h2: 64px;

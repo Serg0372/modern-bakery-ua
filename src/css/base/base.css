@@ -1,12 +1,4 @@
 /* Styles for Mobile devices */
-.container {
-  min-width: 320px;
-  /* max-width: 375px; */
-  margin: 0 auto;
-  padding: 0 20px;
-  overflow-x: hidden;
-}
-
 body {
   font-family: var(--primary-font);
   font-size: var(--fs-s);
@@ -22,36 +14,59 @@ body {
   padding-bottom: 20px;
 }
 
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
 h1 {
   font-weight: var(--fw-black);
-  font-size: var(--fs-huge);
-  line-height: 99%;
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h);
+  letter-spacing: var(--ls-main);
   color: var(--color-light);
 }
 
 h2 {
   /* font-family: var(--primary-font); */
   font-weight: var(--fw-black);
-  font-size: var(--fs-xxl);
-  line-height: 131%;
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h);
+  letter-spacing: var(--ls-main);
 }
 
-h1,
-h2,
+.nav-link,
 button {
   letter-spacing: var(--ls-tight);
 }
 
-
 /* Styles for Desktop devices */
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1240px;
-    padding: 0 100px;
-  }
-
+@media screen and (min-width: 1240px) {
   .section {
     padding-top: 48px;
     padding-bottom: 48px;
   }
+
+  .container {
+    max-width: 1240px;
+    /* padding-left: 100px;
+    padding-right: 100px; */
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
