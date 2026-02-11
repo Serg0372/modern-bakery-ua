@@ -1,6 +1,6 @@
-.section-title {
+/* .traditions-title {
     margin-bottom: 24px;
-}
+} */
 
 .traditions-description {
     font-size: var(--fs-m);
@@ -8,18 +8,6 @@
     margin-bottom: 16px;
 }
 
-.accent-light-color {
-    color: var(--color-accent-light);
-}
-
-.accent-text {
-    font-weight: var(--fw-semibold);
-
-}
-
-.uppercase-text {
-    text-transform: uppercase;
-}
 
 .traditions-image {
     display: none;
@@ -28,16 +16,18 @@
 @media screen and (min-width: 1240px) {
     .traditions-container {
         display: flex;
+        justify-content: space-between;
     }
 
-    .section-title {
+    .traditions-title {
         margin-bottom: 42px;
+
+
     }
 
     .traditions-description {
-        font-size: var(--fs-l);
-        font-weight: var(--fw-regular);
-        max-width: 660px;
+
+        max-width: 560px;
         margin-bottom: 42px;
     }
 
@@ -48,15 +38,4 @@
         border-radius: 400px 400px 0 0;
     }
 
-    .section {}
-
-    .traditions-section {}
-
-    .container {}
-
-    .traditions-container {}
-
-    .traditions-text-box {}
-
-    .traditions-image-box {}
 }

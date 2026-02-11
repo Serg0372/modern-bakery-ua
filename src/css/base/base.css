@@ -4,7 +4,7 @@ body {
   font-size: var(--fs-s);
   font-weight: var(--fw-light);
   letter-spacing: var(--ls-main);
-  line-height: 1.5;
+  line-height: var(--lh-p);
   color: var(--color-dark);
   background-color: var(--color-light);
 }
@@ -26,7 +26,7 @@ body {
 h1 {
   font-weight: var(--fw-black);
   font-size: var(--fs-h1);
-  line-height: var(--lh-h);
+  line-height: var(--lh-h1);
   letter-spacing: var(--ls-main);
   color: var(--color-light);
 }
@@ -35,8 +35,25 @@ h2 {
   /* font-family: var(--primary-font); */
   font-weight: var(--fw-black);
   font-size: var(--fs-h2);
-  line-height: var(--lh-h);
+  line-height: var(--lh-p);
   letter-spacing: var(--ls-main);
+  margin-bottom: 24px;
+}
+
+.accent-text {
+  font-weight: var(--fw-semibold);
+}
+
+.accent-light-color {
+  color: var(--color-accent-light);
+}
+
+.accent-dark-color {
+  color: var(--color-accent-dark);
+}
+
+.uppercase-text {
+  text-transform: uppercase;
 }
 
 .nav-link,
@@ -46,6 +63,11 @@ button {
 
 /* Styles for Desktop devices */
 @media screen and (min-width: 1240px) {
+  body {
+    font-size: var(--fs-l);
+    font-weight: var(--fw-regular);
+  }
+
   .section {
     padding-top: 48px;
     padding-bottom: 48px;

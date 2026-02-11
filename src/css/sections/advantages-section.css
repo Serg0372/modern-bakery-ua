@@ -18,13 +18,18 @@
     .advantages-section {
         padding-top: 0px;
         padding-bottom: 0px;
+
+    }
+
+    .advantages-container {
+        max-width: 1440px;
         background-color: var(--color-accent-light);
     }
 
     .advantages-list {
         max-width: 100%;
         background-color: transparent;
-        padding: 16px 0;
+        padding: 16px 100px;
         border-radius: 0;
 
         display: flex;
