@@ -8,16 +8,16 @@
     ;
 
 
-    --primary-font: "Poppins", sans-serif;
-    --second-font: "Roboto", sans-serif;
+    --primary-font: "Manrope", sans-serif;
+    --second-font: "Inter", sans-serif;
 
 
     --fw-light: 300;
     --fw-regular: 400;
     --fw-medium: 500;
     --fw-semibold: 600;
-    --fw-bold: 700;
-    --fw-black: 900;
+    --fw-extrabold: 800;
+
 
     /* Font Sizes */
     --fs-xs: 12px;
@@ -30,13 +30,14 @@
     --fs-h1: 67px;
 
 
-    --lh-h1: 1;
+    --lh-h: 1.2;
+    --lh-b: 1.3;
     --lh-p: 1.5;
 
-    --ls-tight: -0.04em;
-    /* Для великих заголовків */
+
     --ls-main: -0.02em;
-    /* Для основного тексту (більш безпечно) */
+    --ls-tight: -0.04em;
+
 
     --anim-fast: 0.3s ease-in-out;
     --anim-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);

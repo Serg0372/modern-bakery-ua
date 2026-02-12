@@ -1,32 +1,107 @@
-.button {
-    font-family: var(--primary-font);
-    font-weight: var(--fw-semibold);
-    font-size: var(--fs-m);
-    color: var(--color-light);
-    background-color: var(--color-accent-light);
-    border: 2px solid var(--color-accent-light);
-    border-radius: 8px;
-    padding: 10px 24px;
-    line-height: 1.3;
-    transition:
-        border-color var(--anim-fast),
-        background-color var(--anim-fast),
-        color var(--anim-fast);
+/*  ----------------  Кнопка  "Burger"   ----------- */
+
+
+@media screen and (min-width: 1240px) {
+    .burger-menu {
+        display: none;
+    }
 }
 
-.button:hover,
-.button:focus {
-    border-color: var(--color-accent-dark);
-    background-color: var(--color-light);
+/*    ----------------  Кнопки "Замовити дзінок"   ----------- */
+.button-call {
+    padding: 10px 24px;
+    border: 2px solid var(--color-accent-light);
+    border-radius: 8px;
+
+    font-size: var(--fs-m);
+    font-weight: var(--fw-semibold);
+    color: var(--color-light);
+
+    background-color: var(--color-accent-light);
+    transition:
+        color var(--anim-fast),
+        background-color var(--anim-fast),
+        border-color var(--anim-fast);
+}
+
+.button-call:hover,
+.button-call:focus {
     color: var(--color-accent-dark);
+    background-color: var(--color-light);
+    border-color: var(--color-accent-dark);
 }
 
 @media screen and (min-width: 1240px) {
-    .button {
-        font-size: var(--fs-l);
+    .button-call {
         padding: 16px 32px;
+        font-size: var(--fs-l);
     }
 }
+
+/*    ----------------  Кнопка в Heder "Замовити дзінок"   ----------- */
+.header-button {
+    display: none;
+}
+
+@media screen and (min-width: 1240px) {
+    .header-button {
+        display: flex;
+    }
+}
+
+/*    ----------------  Кнопка в Hero "Замовити дзінок"   ----------- */
+.hero-button {
+    margin: 0 auto 32px;
+}
+
+@media screen and (min-width: 1240px) {
+    .hero-button {
+        display: none;
+    }
+}
+
+/*    ----------------  Кнопки Вліво/Вправо "Формати"   ----------- */
+.formats-button {
+    display: none;
+}
+
+@media screen and (min-width: 1240px) {
+    .formats-button {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        border: 2px solid var(--color-dark);
+        border-radius: 50%;
+
+        color: var(--color-dark);
+        background-color: transparent;
+
+        transition:
+            color var(--anim-fast),
+            background-color var(--anim-fast),
+            border-color var(--anim-fast);
+    }
+
+    .formats-button:hover,
+    .formats-button:focus {
+        color: var(--color-light);
+        background-color: var(--color-accent-light);
+        border-color: var(--color-accent-light);
+    }
+
+    .formats-button-next {
+        transform: rotate(180deg);
+    }
+}
+
+/*    ----------------  Кнопка в формі зворотнього зв'язку "Замовити дзінок"   ----------- */
+.contacts-button {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 197px;
+}
+
+/*    ----------------  Кнопки "Нагору/Вниз"   ----------- */
 
 .button-scroll {
     position: fixed;
@@ -36,44 +111,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-accent-light);
+
     border: 2px solid var(--color-accent-light);
     border-radius: 50%;
+
+    background-color: var(--color-accent-light);
     opacity: 0.5;
-    /*visibility: hidden;
-    pointer-events: none; */
 
     transition:
-        opacity var(--anim-fast),
         background-color var(--anim-fast),
-        border-color var(--anim-fast);
+        border-color var(--anim-fast),
+        opacity var(--anim-fast);
 }
 
 .button-scroll:hover,
 .button-scroll:focus {
-    opacity: 1;
-    background-color: var(--color-light);
     border-color: var(--color-accent-dark);
-}
-
-/* 
-.button-scroll.is-visible {
-    opacity: 0.7;
-    visibility: visible;
-    pointer-events: auto;
-} */
-
-.button-scroll-icon {
-    display: block;
-    width: 28px;
-    height: 28px;
-    fill: var(--color-light);
-    transition: fill var(--anim-fast);
-}
-
-.button-scroll:hover .button-scroll-icon,
-.button-scroll:focus .button-scroll-icon {
-    fill: var(--color-accent-dark);
+    background-color: var(--color-light);
+    opacity: 1;
 }
 
 .button-scroll-up {
@@ -84,14 +139,4 @@
 .button-scroll-down {
     bottom: 20px;
     right: 20px;
-}
-
-
-
-.button-scroll-up .button-scroll-icon {
-    transform: rotate(90deg);
-}
-
-.button-scroll-down .button-scroll-icon {
-    transform: rotate(270deg);
 }

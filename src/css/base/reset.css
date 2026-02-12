@@ -13,25 +13,19 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6,
+/* h5,
+h6, */
 p,
 ul,
 ol,
 li,
-figure,
+/* figure,
 figcaption,
 blockquote,
-dl,
+dl, */
 dd {
   margin: 0;
   padding: 0;
-}
-
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-
 }
 
 ul,
@@ -42,12 +36,11 @@ ol {
 p:last-child,
 li:last-child {
   margin-bottom: 0;
-
 }
 
 a {
-  text-decoration: none;
   color: currentColor;
+  text-decoration: none;
   letter-spacing: 0;
 }
 
@@ -67,6 +60,8 @@ svg {
   display: block;
   max-width: 100%;
   max-height: 100%;
+  fill: currentColor;
+
 }
 
 input,
@@ -82,17 +77,17 @@ textarea {
 
 button {
   cursor: pointer;
-  border: none;
-  padding: 0;
-  background: none;
   user-select: none;
+  padding: 0;
+  border: none;
+  background: none;
 }
 
-fieldset {
+/* fieldset {
   padding: 0;
   margin: 0;
   border: none;
-}
+}*/
 
 :focus-visible {
   outline: 2px solid currentColor;

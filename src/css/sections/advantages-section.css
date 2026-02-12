@@ -4,10 +4,9 @@
 }
 
 .advantages-list {
-    max-width: 318px;
-    background-color: var(--color-input-border);
     padding: 24px 40px;
     border-radius: 24px;
+    background-color: var(--color-input-border);
 }
 
 .advantages-item {
@@ -18,23 +17,19 @@
     .advantages-section {
         padding-top: 0px;
         padding-bottom: 0px;
-
-    }
-
-    .advantages-container {
-        max-width: 1440px;
         background-color: var(--color-accent-light);
     }
 
     .advantages-list {
-        max-width: 100%;
-        background-color: transparent;
-        padding: 16px 100px;
-        border-radius: 0;
-
         display: flex;
         justify-content: space-between;
+        max-width: 100%;
+        padding: 16px 32px;
+        border-radius: 0;
+        background-color: transparent;
+    }
 
+    .advantages-text {
         font-size: var(--fs-xxl);
         font-weight: var(--fw-light);
         color: var(--color-light);

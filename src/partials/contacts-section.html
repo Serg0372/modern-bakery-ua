@@ -1,12 +1,13 @@
 <section class="section contacts-section" id="contacts-section">
-  <div class="container contacts-container">
+  <div class="contacts-container">
     <div class="contacts-box">
       <div class="contacts-form-box">
-        <h2 class="section-title">Приєднуйся до мережі пекарень </h2>
-        <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+        <h2 class="section-title contacts-title">Приєднуйся до мережі пекарень </h2>
+        <p class="contacts-text">Заповни форму, щоб ми звʼязались з тобою!</p>
         <form class="modal-form contacts-form">
           <label class="form-label visually-hidden" for="name">Ім'я</label>
           <input
+            class="input-form contact-input"
             type="text"
             name="name"
             id="name"
@@ -17,6 +18,7 @@
 
           <label class="form-label visually-hidden" for="tel">Телефон</label>
           <input
+            class="input-form contact-input"
             type="tel"
             name="phone"
             id="tel"
@@ -27,13 +29,14 @@
 
           <label class="form-label visually-hidden" for="email">Електронна пошта</label>
           <input
+            class="input-form contact-input"
             type="email"
             name="email"
             id="email"
             title="Введіть коректний email"
             placeholder="Електронна пошта"
             required />
-          <button class="button contacts-button" type="submit">Замовити дзвінок</button>
+          <button class="button contacts-button button-call" type="submit">Замовити дзвінок</button>
 
           <p class="policy contacts-policy"
             >Натискаючи на кнопку я погоджуюсь з

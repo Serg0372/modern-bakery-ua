@@ -1,0 +1,73 @@
+/*  ----------------  Header logo   ----------- */
+
+.logo {
+    width: 72px;
+    height: 38px;
+    fill: var(--color-light);
+    transition: fill var(--anim-fast);
+}
+
+.logo:hover,
+.logo:focus {
+    fill: var(--color-accent-light);
+}
+
+@media screen and (min-width: 1240px) {
+    .logo {
+        width: 114px;
+        height: 56px;
+    }
+}
+
+/*  ----------------  Burger icon   ---------------- */
+
+.burger-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-light);
+    transition: fill var(--anim-fast);
+}
+
+.burger-menu:hover .burger-icon,
+.burger-menu:focus .burger-icon {
+    fill: var(--color-accent-light);
+}
+
+/* ----------------  footer logo   ---------------- */
+
+.footer-logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+}
+
+.footer-social-icon {
+    fill: var(--color-light);
+}
+
+@media screen and (min-width: 1240px) {
+    .footer-logo {
+        margin: 0;
+        width: 108px;
+        height: 57px;
+    }
+}
+
+/*  ----------------  Scroll icon   ----------- */
+
+.button-scroll-icon {
+    transition: fill var(--anim-fast);
+}
+
+.button-scroll:hover .button-scroll-icon,
+.button-scroll:focus .button-scroll-icon {
+    fill: var(--color-accent-dark);
+}
+
+.button-scroll-up .button-scroll-icon {
+    transform: rotate(90deg);
+}
+
+.button-scroll-down .button-scroll-icon {
+    transform: rotate(270deg);
+}

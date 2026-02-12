@@ -1,11 +1,10 @@
 .formats-title {
-    /* margin-bottom: 24px; */
     text-align: center;
 }
 
-.formats-button {
+/* .formats-button {
     display: none;
-}
+} */
 
 .formats-card-item {
     border-radius: 16px;
@@ -75,6 +74,7 @@
         justify-content: center;
     }
 
+    /* 
     .formats-button {
         display: flex;
         align-items: center;
@@ -87,7 +87,7 @@
         color: var(--color-dark);
         background-color: transparent;
 
-    }
+    } */
 
     .formats-cards-list {
         display: flex;
@@ -114,7 +114,7 @@
         margin-bottom: 24px;
     }
 
-    .formats-button-next {
+    /* .formats-button-next {
         transform: rotate(180deg);
-    }
+    }*/
 }
