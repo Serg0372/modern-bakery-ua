@@ -1,0 +1,63 @@
+.mobile-menu {
+    position: fixed;
+    z-index: 99999;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 16px 24px;
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    overflow-y: auto;
+}
+
+.is-open {
+    display: block;
+}
+
+.modal-logo-icon {
+    transition: fill var(--anim-fast);
+}
+
+.modal-logo:hover .modal-logo-icon,
+.modal-logo:focus .modal-logo-icon {
+    fill: var(--color-accent-light);
+}
+
+.mobile-menu-nav-item {
+    margin-bottom: 16px;
+    transition: color var(--anim-fast), font-weight var(--anim-fast);
+}
+
+.mobile-menu-nav-item:hover,
+.mobile-menu-nav-item:focus {
+    color: var(--color-accent-light);
+    font-weight: var(--fw-semibold);
+}
+
+.mobile-menu::before {
+    content: '';
+    position: absolute;
+
+    bottom: 0px;
+    right: 0px;
+    width: 147px;
+    height: 231px;
+    background-image: url(/src/img/modal-mobile/modal-bi-m@1x.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+}
+
+@media (min-resolution: 192dpi) {
+    .mobile-menu::before {
+        background-image: url(/src/img/modal-mobile/modal-bi-m@2x.webp);
+    }
+}
+
+@media screen and (min-width:1240px) {
+    .mobile-menu {
+        display: none;
+    }
+}

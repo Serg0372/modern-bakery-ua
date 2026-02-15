@@ -43,6 +43,12 @@
 
 .footer-social-icon {
     fill: var(--color-light);
+    transition: fill var(--anim-fast);
+}
+
+.footer-social-link:hover .footer-social-icon,
+.footer-social-link:focus .footer-social-icon {
+    fill: var(--color-accent-light);
 }
 
 @media screen and (min-width: 1240px) {
@@ -70,4 +76,34 @@
 
 .button-scroll-down .button-scroll-icon {
     transform: rotate(270deg);
+}
+
+
+
+/*  ----------------  Modal close icon   ----------- */
+
+.button-close-icon {
+    fill: none;
+    stroke: var(--color-dark);
+}
+
+.button-close:hover .button-close-icon,
+.button-close:focus .button-close-icon {
+    stroke: var(--color-accent-dark);
+}
+
+.modal-logo {
+    display: block;
+    margin-bottom: 32px;
+}
+
+.stamp {
+    position: absolute;
+    fill: var(--color-input-text);
+    z-index: -1;
+}
+
+.menu-stamp {
+    bottom: 0%;
+    right: 0px;
 }

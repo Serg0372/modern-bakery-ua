@@ -1,41 +1,51 @@
-<!-- <div class="backdrop is-hidden">
+<div class="backdrop is-hidden">
   <div class="modal">
-    <button class="button-close modal-close " type="button">
-      <svg class="modal-close-icon" width="32" height="32">
-        <use href="./src/img/sprite.svg#icon-close"></use>
+    <button
+      class="button-close modal-close mobile-menu-button-close"
+      type="button"
+      aria-label="Закрити меню">
+      <svg class="button-close-icon" width="24" height="24">
+        <use href="/icons/sprite.svg#icon-close"></use>
       </svg>
     </button>
-    <h2 class="section-title">Замовити дзвінок</h2>
-    <p class="modal-text">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+    <h2 class="section-title modal-title">Замовити дзвінок</h2>
+    <p class="modal-text contacts-text">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
     <form class="modal-form contacts-form">
-      <label class="form-label visually-hidden" for="name">Ім'я</label>
-      <input
-        type="text"
-        name="name"
-        id="name"
-        pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ ]+"
-        title="Тільки літери"
-        placeholder="Ім'я"
-        required />
+      <div class="form-field">
+        <input
+          class="input-form contact-input"
+          type="text"
+          name="name"
+          id="name"
+          pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ ]+"
+          title="Тільки літери"
+          placeholder=" "
+          required /><label class="form-label" for="name">Ім'я</label></div
+      >
 
-      <label class="form-label visually-hidden" for="tel">Телефон</label>
-      <input
-        type="tel"
-        name="phone"
-        id="tel"
-        pattern="\+380\d{9}"
-        title="+380XXXXXXXXX"
-        placeholder="Телефон"
-        required />
+      <div class="form-field">
+        <input
+          class="input-form contact-input"
+          type="tel"
+          name="phone"
+          id="tel"
+          pattern="\+380\d{9}"
+          title="+380XXXXXXXXX"
+          placeholder=" "
+          required /><label class="form-label" for="tel">Телефон</label></div
+      >
 
-      <label class="form-label visually-hidden" for="email">Електронна пошта</label>
-      <input
-        type="email"
-        name="email"
-        id="email"
-        title="Введіть коректний email"
-        placeholder="Електронна пошта"
-        required />
+      <div class="form-field">
+        <input
+          class="input-form contact-input"
+          type="email"
+          name="email"
+          id="email"
+          title="Введіть коректний email"
+          placeholder=" "
+          required /><label class="form-label" for="email">Електронна пошта</label></div
+      >
+
       <button class="button contacts-button button-call" type="submit">Замовити дзвінок</button>
 
       <p class="policy contacts-policy"
@@ -45,5 +55,12 @@
         </span>
       </p>
     </form>
+    <svg
+      class="stamp menu-stamp modal-stamp"
+      width="138"
+      height="138"
+      aria-label="Фірмовий штамп пекарні">
+      <use href="/icons/sprite.svg#icon-group"></use>
+    </svg>
   </div>
-</div> -->
+</div>

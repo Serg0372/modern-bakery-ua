@@ -114,7 +114,7 @@
 
     border: 2px solid var(--color-accent-light);
     border-radius: 50%;
-
+    color: var(--color-dark);
     background-color: var(--color-accent-light);
     opacity: 0.5;
 
@@ -139,4 +139,22 @@
 .button-scroll-down {
     bottom: 20px;
     right: 20px;
+}
+
+/*    ----------------  Кнопка закриття мобільного меню   ----------- */
+
+.button-close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    transition: stroke var(--anim-fast);
+}
+
+.mobile-menu-button-close {
+    top: 16px;
+    right: 24px;
 }
