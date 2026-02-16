@@ -50,15 +50,17 @@
     margin-left: auto;
 }
 
+.modal-stamp {
+    display: none;
+}
+
+
 .modal-form {
     gap: 16px;
 }
 
 
 
-.modal-stamp {
-    display: none;
-}
 
 @media screen and (min-width: 1240px) {
     .modal {
