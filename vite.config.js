@@ -6,7 +6,7 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   return {
-    base: '/modern-bakery-ua/', // Обов'язково додай це!
+    base: './',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
