@@ -14,7 +14,7 @@
 }
 
 .chef-img {
-    min-width: 140px;
+    max-width: 140px;
     max-height: 226px;
     border-radius: 2px 2px 2px 116px;
     box-shadow:
@@ -74,7 +74,7 @@
     }
 
     .chef-img {
-        min-width: 241px;
+        max-width: 241px;
         max-height: 390px;
         border-radius: 2px 2px 2px 200px;
         box-shadow:
