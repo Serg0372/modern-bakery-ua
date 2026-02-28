@@ -16,18 +16,22 @@
       </p>
     </div>
     <div class="traditions-image-box">
-      <img
-        class="traditions-image"
-        alt="Чоловік в пекарні дивиться з посмішкою на свіжу випічку"
-        width="393"
-        height="466"
-        src="./src/img/traditions/tradition-image-d@1x.webp"
-        srcset="
-          ./src/img/traditions/tradition-image-d@1x.webp 1x,
-          ./src/img/traditions/tradition-image-d@2x.webp 2x
-        "
-        loading="lazy"
-        decoding="async" />
+      <picture>
+        <source
+          srcset="
+            ./src/img/traditions/tradition-image-d@1x.webp 1x,
+            ./src/img/traditions/tradition-image-d@2x.webp 2x
+          "
+          media="(min-width: 320px)" />
+        <img
+          class="traditions-image"
+          alt="Чоловік в пекарні дивиться з посмішкою на свіжу випічку"
+          width="393"
+          height="466"
+          src="./src/img/traditions/tradition-image-d@1x.webp"
+          loading="lazy"
+          decoding="async" />
+      </picture>
     </div>
   </div>
 </section>
